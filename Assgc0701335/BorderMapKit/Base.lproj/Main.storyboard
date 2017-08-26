@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BorderMapKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PyV-Fs-IYI">
+                                <rect key="frame" x="0.0" y="224" width="375" height="443"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Sth-Zt-Ixa" appends="YES" id="xpR-qC-lcL"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kj9-CA-mbs">
+                                <rect key="frame" x="23" y="78" width="116" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="jm7-vB-ivd"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Country One">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Cochin-BoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Country One" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8bJ-U0-HUY">
+                                <rect key="frame" x="147" y="73" width="205" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pe-HW-q8r">
+                                <rect key="frame" x="98" y="175" width="194" height="30"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ey2-4R-zZy"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Match Common Country">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="matchbrdr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Atn-04-5Eq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4E-Pp-DUt">
+                                <rect key="frame" x="23" y="124" width="116" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Country Two">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Cochin-BoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Country Two" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8o-4s-HpM">
+                                <rect key="frame" x="147" y="124" width="205" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgo-Tm-xVT">
+                                <rect key="frame" x="72" y="33" width="230" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lys-KE-doB"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Common Borders">
+                                        <attributes>
+                                            <font key="NSFont" size="27" name="Cochin-BoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Pe-HW-q8r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="82" id="0a1-uW-bms"/>
+                            <constraint firstItem="8bJ-U0-HUY" firstAttribute="leading" secondItem="Kj9-CA-mbs" secondAttribute="trailing" constant="8" symbolic="YES" id="19K-m9-0k4"/>
+                            <constraint firstItem="rgo-Tm-xVT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="9zB-dW-m65"/>
+                            <constraint firstItem="Kj9-CA-mbs" firstAttribute="centerY" secondItem="8bJ-U0-HUY" secondAttribute="centerY" id="BpF-oc-Hy0"/>
+                            <constraint firstItem="Kj9-CA-mbs" firstAttribute="leading" secondItem="W4E-Pp-DUt" secondAttribute="leading" id="CW4-it-KzW"/>
+                            <constraint firstItem="rgo-Tm-xVT" firstAttribute="centerX" secondItem="PyV-Fs-IYI" secondAttribute="centerX" id="GKx-ST-wc1"/>
+                            <constraint firstItem="5Pe-HW-q8r" firstAttribute="top" secondItem="W4E-Pp-DUt" secondAttribute="bottom" constant="24" id="Gpa-2w-bs1"/>
+                            <constraint firstItem="5Pe-HW-q8r" firstAttribute="top" secondItem="T8o-4s-HpM" secondAttribute="bottom" constant="21" id="JX5-1U-694"/>
+                            <constraint firstItem="Kj9-CA-mbs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="N2T-dJ-p00"/>
+                            <constraint firstItem="T8o-4s-HpM" firstAttribute="top" secondItem="8bJ-U0-HUY" secondAttribute="bottom" constant="21" id="Uvb-kP-v16"/>
+                            <constraint firstItem="PyV-Fs-IYI" firstAttribute="top" secondItem="5Pe-HW-q8r" secondAttribute="bottom" constant="19" id="bJe-Ep-Y9F"/>
+                            <constraint firstItem="8bJ-U0-HUY" firstAttribute="trailing" secondItem="T8o-4s-HpM" secondAttribute="trailing" id="bxe-rX-7D9"/>
+                            <constraint firstItem="8bJ-U0-HUY" firstAttribute="leading" secondItem="T8o-4s-HpM" secondAttribute="leading" id="chP-Pq-uGW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Pe-HW-q8r" secondAttribute="trailing" constant="67" id="ee0-8J-iUT"/>
+                            <constraint firstItem="W4E-Pp-DUt" firstAttribute="top" secondItem="T8o-4s-HpM" secondAttribute="top" id="flI-Sx-eJH"/>
+                            <constraint firstItem="rgo-Tm-xVT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="fz8-KJ-qUP"/>
+                            <constraint firstItem="PyV-Fs-IYI" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="jRC-wg-WAG"/>
+                            <constraint firstAttribute="trailing" secondItem="PyV-Fs-IYI" secondAttribute="trailing" id="l9m-gr-psM"/>
+                            <constraint firstItem="PyV-Fs-IYI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mcv-dJ-la7"/>
+                            <constraint firstItem="8bJ-U0-HUY" firstAttribute="top" secondItem="rgo-Tm-xVT" secondAttribute="bottom" constant="5" id="paT-AN-2Dz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8bJ-U0-HUY" secondAttribute="trailing" constant="7" id="qJv-i6-P6T"/>
+                            <constraint firstItem="T8o-4s-HpM" firstAttribute="leading" secondItem="W4E-Pp-DUt" secondAttribute="trailing" constant="8" symbolic="YES" id="qy1-JT-GGP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryone" destination="8bJ-U0-HUY" id="02t-xW-P4b"/>
+                        <outlet property="countrytwo" destination="T8o-4s-HpM" id="Rv9-cS-sh1"/>
+                        <outlet property="mapObj" destination="PyV-Fs-IYI" id="PrS-mx-pQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Sth-Zt-Ixa">
+                    <connections>
+                        <action selector="addPin:" destination="BYZ-38-t0r" id="nsE-2s-bHG"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="15" y="-9"/>
+        </scene>
+    </scenes>
+</document>
